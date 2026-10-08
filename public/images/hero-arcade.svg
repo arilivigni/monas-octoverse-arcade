@@ -1,152 +1,87 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 540" role="img" aria-labelledby="title desc">
   <title id="title">Mona's Octoverse Arcade</title>
-  <desc id="desc">Original workshop artwork in a GitHub-green, neutral, and Copilot-purple tile grid: a big-eyed, Octocat-inspired Mona in a green headband beside a green curly brace; a purple Copilot robot sidekick; a git branch line; a tile of monospace words "ship", "play", and "commit"; red pixel bugs and green commit squares; a terminal prompt; and a green contribution-graph pixel pattern.</desc>
+  <desc id="desc">Original arcade artwork in a bold tile grid: a violet Mona silhouette, a pale tile patterned with “all”, “tgthr”, and “now”, an orange curly brace, Mona’s smiling portrait on lavender, a pink branching motif, a repeating green-and-purple pattern, a terminal prompt, and bright green pixel blocks.</desc>
   <defs>
-    <style>
-      #pixbug { fill: #cf222e; }
-      rect[fill="#c24e00"] { fill: #08872b; }
-      rect[fill="#b3a316"] { fill: #0a241b; }
-      rect[fill="#5cec7f"] { fill: #0fbf3e; }
-    </style>
-    <linearGradient id="m-face" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f9b4cf"/>
-      <stop offset=".55" stop-color="#f8b89c"/>
-      <stop offset="1" stop-color="#ee8aa4"/>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6a9c7"/>
+      <stop offset=".52" stop-color="#f5b19b"/>
+      <stop offset="1" stop-color="#ec6f9b"/>
     </linearGradient>
-    <radialGradient id="m-blush">
-      <stop offset="0" stop-color="#ef5f86" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#ef5f86" stop-opacity="0"/>
+    <radialGradient id="eye">
+      <stop offset="0" stop-color="#5638db"/>
+      <stop offset="1" stop-color="#170d2a"/>
     </radialGradient>
-    <radialGradient id="m-iris" cx=".45" cy=".4" r=".65">
-      <stop offset="0" stop-color="#5b48a8"/>
-      <stop offset="1" stop-color="#1b1240"/>
-    </radialGradient>
-    <g id="pixbug" fill="#2ea043"><rect x="8" y="0" width="4" height="4"/><rect x="24" y="0" width="4" height="4"/><rect x="12" y="4" width="4" height="4"/><rect x="16" y="4" width="4" height="4"/><rect x="20" y="4" width="4" height="4"/><rect x="0" y="8" width="4" height="4"/><rect x="8" y="8" width="4" height="4"/><rect x="16" y="8" width="4" height="4"/><rect x="24" y="8" width="4" height="4"/><rect x="32" y="8" width="4" height="4"/><rect x="4" y="12" width="4" height="4"/><rect x="8" y="12" width="4" height="4"/><rect x="12" y="12" width="4" height="4"/><rect x="20" y="12" width="4" height="4"/><rect x="24" y="12" width="4" height="4"/><rect x="28" y="12" width="4" height="4"/><rect x="0" y="16" width="4" height="4"/><rect x="4" y="16" width="4" height="4"/><rect x="8" y="16" width="4" height="4"/><rect x="12" y="16" width="4" height="4"/><rect x="20" y="16" width="4" height="4"/><rect x="24" y="16" width="4" height="4"/><rect x="28" y="16" width="4" height="4"/><rect x="32" y="16" width="4" height="4"/><rect x="4" y="20" width="4" height="4"/><rect x="8" y="20" width="4" height="4"/><rect x="12" y="20" width="4" height="4"/><rect x="20" y="20" width="4" height="4"/><rect x="24" y="20" width="4" height="4"/><rect x="28" y="20" width="4" height="4"/><rect x="0" y="24" width="4" height="4"/><rect x="8" y="24" width="4" height="4"/><rect x="12" y="24" width="4" height="4"/><rect x="16" y="24" width="4" height="4"/><rect x="20" y="24" width="4" height="4"/><rect x="24" y="24" width="4" height="4"/><rect x="32" y="24" width="4" height="4"/><rect x="12" y="28" width="4" height="4"/><rect x="20" y="28" width="4" height="4"/></g>
-    <clipPath id="clipC"><rect x="190" y="0" width="370" height="390"/></clipPath>
-    <clipPath id="clipD"><rect x="560" y="0" width="470" height="390"/></clipPath>
-    <clipPath id="clipB"><rect x="0" y="195" width="190" height="345"/></clipPath>
-    <clipPath id="clipE"><rect x="190" y="390" width="380" height="150"/></clipPath>
-    <clipPath id="clipA"><rect x="0" y="0" width="190" height="195"/></clipPath>
+    <pattern id="repeat" width="78" height="64" patternUnits="userSpaceOnUse">
+      <rect width="78" height="64" fill="#170d2a"/>
+      <path d="M-12 16 C-3 -2 16 -2 26 14 C34 27 48 27 56 13 C64 -1 78 0 88 16 M-12 56 C-3 38 16 38 26 54 C34 67 48 67 56 53 C64 39 78 40 88 56" fill="none" stroke="#159447" stroke-width="18" stroke-linecap="round"/>
+    </pattern>
+    <pattern id="pixels" width="76" height="76" patternUnits="userSpaceOnUse">
+      <rect width="76" height="76" fill="#58ed7c"/>
+      <rect x="0" y="0" width="38" height="38" fill="#b3a316"/>
+      <rect x="38" y="38" width="38" height="38" fill="#b3a316"/>
+      <rect x="38" y="0" width="38" height="38" fill="#58ed7c"/>
+      <rect x="0" y="38" width="38" height="38" fill="#58ed7c"/>
+    </pattern>
+    <clipPath id="mona-tile"><rect x="572" y="0" width="458" height="390"/></clipPath>
+    <clipPath id="silhouette-tile"><rect width="192" height="198"/></clipPath>
   </defs>
 
-  <!-- A: Copilot sidekick -->
-  <rect x="0" y="0" width="190" height="195" fill="#1b1532"/>
-  <g clip-path="url(#clipA)">
-    <ellipse cx="95" cy="225" rx="80" ry="50" fill="#5a3cff"/>
-    <line x1="95" y1="58" x2="95" y2="34" stroke="#5a3cff" stroke-width="7" stroke-linecap="round"/>
-    <path d="M95 14 L100 25 L111 30 L100 35 L95 46 L90 35 L79 30 L90 25 Z" fill="#b98aff"/>
-    <circle cx="35" cy="112" r="16" fill="#5a3cff"/><circle cx="155" cy="112" r="16" fill="#5a3cff"/>
-    <rect x="35" y="56" width="120" height="112" rx="44" fill="#5a3cff"/>
-    <rect x="52" y="88" width="86" height="46" rx="23" fill="#1b1532"/>
-    <rect x="70" y="100" width="12" height="22" rx="6" fill="#5cec7f"/>
-    <rect x="108" y="100" width="12" height="22" rx="6" fill="#5cec7f"/>
+  <rect width="1030" height="540" fill="#170d2a"/>
+
+  <rect width="192" height="198" fill="#170d2a"/>
+  <g clip-path="url(#silhouette-tile)" fill="#5a3cff">
+    <path d="M27 57 67 21 Q101 1 139 14 L159 -8 Q174 20 182 54 Q198 117 159 146 Q137 163 104 160 Q72 156 42 134 Q7 108 12 83 Q14 69 27 57Z"/>
+    <path d="M79 143 Q106 142 129 157 Q153 174 159 207 L49 207 Q57 170 79 143Z"/>
+    <path d="M18 74 34 79 M18 87 34 89" fill="none" stroke="#170d2a" stroke-width="3" stroke-linecap="round"/>
   </g>
 
-  <!-- B: git branch -->
-  <rect x="0" y="195" width="190" height="345" fill="#0a241b"/>
-  <g clip-path="url(#clipB)" fill="none" stroke="#0fbf3e" stroke-width="28" stroke-linecap="round">
-    <circle cx="75" cy="225" r="24"/>
-    <path d="M75 249 C75 310 150 300 150 370 C150 440 30 430 30 510 L30 560"/>
-    <circle cx="150" cy="370" r="2" stroke-width="40"/>
+  <rect x="192" width="380" height="390" fill="#d9d9d9"/>
+  <g fill="#241830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">
+    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="515" y="28">tgthr</text>
+    <text x="198" y="71">tgthr</text><text x="289" y="71">now</text><text x="525" y="71">now</text>
+    <text x="289" y="114">all</text><text x="359" y="114">tgthr</text>
+    <text x="368" y="157">now</text><text x="446" y="157">all</text>
+    <text x="198" y="201">tgthr</text><text x="435" y="201">tgthr</text>
+    <text x="211" y="245">now</text><text x="289" y="245">all</text><text x="525" y="245">all</text>
+    <text x="277" y="288">tgthr</text><text x="368" y="288">now</text>
+    <text x="368" y="331">all</text><text x="435" y="331">tgthr</text>
+    <text x="289" y="375">all</text><text x="525" y="375">all</text>
   </g>
 
-  <!-- C: word pattern -->
-  <rect x="190" y="0" width="370" height="390" fill="#f2f5f3"/>
-  <g clip-path="url(#clipC)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#101411">
-      <text x="210" y="40">ship</text>
-      <text x="200" y="84">commit</text>
-      <text x="285" y="84">play</text>
-      <text x="285" y="128">play</text>
-      <text x="360" y="128">ship</text>
-      <text x="360" y="172">ship</text>
-      <text x="440" y="172">commit</text>
-      <text x="200" y="216">commit</text>
-      <text x="440" y="216">play</text>
-      <text x="210" y="260">play</text>
-      <text x="285" y="260">ship</text>
-      <text x="285" y="304">ship</text>
-      <text x="360" y="304">commit</text>
-      <text x="360" y="348">commit</text>
-      <text x="440" y="348">play</text>
-      <text x="285" y="392">play</text>
-  </g>
-
-  <!-- D: Mona -->
-  <rect x="560" y="0" width="470" height="390" fill="#c898fd"/>
-  <g clip-path="url(#clipD)">
-    <g transform="translate(20 0)">
-  <g id="m-mona">
-    <ellipse cx="795" cy="440" rx="160" ry="90" fill="#1b1532"/>
-    <path d="M650 230 C645 170 650 120 668 58 C700 72 730 92 752 108 C782 100 810 100 838 108 C860 92 890 72 922 58 C940 120 945 170 940 230 C935 312 870 348 795 348 C720 348 655 312 650 230 Z" fill="#1b1532"/>
-    <path d="M690 218 C690 162 730 146 795 146 C860 146 900 162 900 218 C900 292 860 324 795 324 C730 324 690 292 690 218 Z" fill="url(#m-face)"/>
-    <ellipse cx="722" cy="268" rx="34" ry="22" fill="url(#m-blush)"/>
-    <ellipse cx="868" cy="268" rx="34" ry="22" fill="url(#m-blush)"/>
-    <path d="M660 150 Q795 98 930 150 L932 172 Q795 122 658 172 Z" fill="#2ea043"/>
-    <path d="M926 152 L962 136 L956 170 Z" fill="#2ea043"/>
-    <path d="M930 162 L966 182 L938 190 Z" fill="#1f7a35"/>
-    <g>
-      <ellipse cx="750" cy="212" rx="33" ry="39" fill="#fde7ef"/>
-      <ellipse cx="840" cy="212" rx="33" ry="39" fill="#fde7ef"/>
-      <ellipse cx="752" cy="214" rx="27" ry="33" fill="url(#m-iris)"/>
-      <ellipse cx="838" cy="214" rx="27" ry="33" fill="url(#m-iris)"/>
-      <ellipse cx="762" cy="198" rx="10" ry="6.5" transform="rotate(-25 762 198)" fill="#ffffff"/>
-      <ellipse cx="848" cy="198" rx="10" ry="6.5" transform="rotate(-25 848 198)" fill="#ffffff"/>
-      <circle cx="742" cy="230" r="3" fill="#ffffff" opacity=".8"/>
-      <circle cx="828" cy="230" r="3" fill="#ffffff" opacity=".8"/>
-    </g>
-    <ellipse cx="795" cy="258" rx="7" ry="5" fill="#1b1532"/>
-    <path d="M770 280 Q798 296 826 276" fill="none" stroke="#1b1532" stroke-width="4" stroke-linecap="round"/>
-    <g stroke="#1b1532" stroke-width="4" stroke-linecap="round">
-      <path d="M652 238 L602 228"/><path d="M652 256 L606 266"/>
-      <path d="M938 238 L988 228"/><path d="M938 256 L984 266"/>
+  <rect x="572" width="458" height="390" fill="#b783f6"/>
+  <g clip-path="url(#mona-tile)">
+    <ellipse cx="847" cy="434" rx="182" ry="84" fill="#170d2a"/>
+    <path d="M684 201 Q662 153 680 84 Q693 42 751 68 L786 83 Q800 89 815 83 Q881 58 923 77 Q966 57 977 71 Q986 103 970 151 Q964 171 976 205 L980 255 Q972 326 919 352 Q884 373 828 369 Q760 368 713 336 Q680 312 675 268Z" fill="#170d2a"/>
+    <path d="M704 230 Q709 169 744 129 Q774 99 815 109 Q853 119 899 109 Q941 101 965 139 Q988 174 970 228 Q1002 267 969 303 Q948 332 901 333 L770 333 Q722 331 699 302 Q679 274 704 230Z" fill="url(#face)"/>
+    <ellipse cx="748" cy="258" rx="34" ry="18" fill="#ef628d" opacity=".36"/>
+    <ellipse cx="925" cy="258" rx="34" ry="18" fill="#ef628d" opacity=".36"/>
+    <ellipse cx="756" cy="195" rx="34" ry="42" fill="#f7e7f0"/>
+    <ellipse cx="902" cy="195" rx="34" ry="42" fill="#f7e7f0"/>
+    <ellipse cx="759" cy="197" rx="26" ry="35" fill="url(#eye)"/>
+    <ellipse cx="899" cy="197" rx="26" ry="35" fill="url(#eye)"/>
+    <ellipse cx="773" cy="177" rx="12" ry="8" transform="rotate(-25 773 177)" fill="#fff"/>
+    <ellipse cx="913" cy="177" rx="12" ry="8" transform="rotate(-25 913 177)" fill="#fff"/>
+    <ellipse cx="831" cy="228" rx="9" ry="6" fill="#170d2a"/>
+    <path d="M813 261 Q834 270 858 257" fill="none" stroke="#170d2a" stroke-width="5" stroke-linecap="round"/>
+    <g fill="none" stroke="#170d2a" stroke-width="9" stroke-linecap="round">
+      <path d="M686 244 644 239 M683 267 641 275 M971 244 1015 239 M974 267 1017 275"/>
     </g>
   </g>
-    </g>
-  </g>
-  <path d="M640 0 L640 0 C590 0 590 30 590 80 L590 150 C590 182 575 195 540 195 C575 195 590 208 590 240 L590 310 C590 360 590 390 640 390" fill="none" stroke="#0fbf3e" stroke-width="44"/>
 
-  <!-- E: pixel bugs and commits -->
-  <rect x="190" y="390" width="380" height="150" fill="#101411"/>
-  <g clip-path="url(#clipE)">
-      <rect x="208" y="402" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="250" y="398"/>
-      <use href="#pixbug" x="298" y="398"/>
-      <rect x="352" y="402" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="394" y="398"/>
-      <use href="#pixbug" x="442" y="398"/>
-      <rect x="496" y="402" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="538" y="398"/>
-      <use href="#pixbug" x="226" y="434"/>
-      <use href="#pixbug" x="274" y="434"/>
-      <rect x="328" y="438" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="370" y="434"/>
-      <use href="#pixbug" x="418" y="434"/>
-      <rect x="472" y="438" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="514" y="434"/>
-      <use href="#pixbug" x="202" y="470"/>
-      <rect x="256" y="474" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="298" y="470"/>
-      <use href="#pixbug" x="346" y="470"/>
-      <rect x="400" y="474" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="442" y="470"/>
-      <use href="#pixbug" x="490" y="470"/>
-      <rect x="544" y="474" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <rect x="232" y="510" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="274" y="506"/>
-      <use href="#pixbug" x="322" y="506"/>
-      <rect x="376" y="510" width="24" height="24" rx="5" fill="#5cec7f"/>
-      <use href="#pixbug" x="418" y="506"/>
-      <use href="#pixbug" x="466" y="506"/>
-      <rect x="520" y="510" width="24" height="24" rx="5" fill="#5cec7f"/>
+  <path d="M670 0 H609 Q558 0 558 51 V138 Q558 190 522 190 H506 V222 H522 Q558 222 558 273 V338 Q558 390 609 390 H670 V339 H619 V252 Q619 207 584 196 Q619 185 619 140 V51 H670Z" fill="#c44b00"/>
+
+  <rect y="198" width="192" height="342" fill="#f42e79"/>
+  <path d="M24 204 H115 Q146 204 151 229 Q154 253 137 268 L89 313 Q69 333 83 351 L161 430 Q190 460 163 486 Q148 500 127 485 L50 408 Q22 380 47 351 L107 286 Q121 270 110 259 Q103 252 90 252 H24Z" fill="none" stroke="#b3a316" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="78" cy="204" r="23" fill="#f42e79"/>
+
+  <rect x="192" y="390" width="380" height="150" fill="url(#repeat)"/>
+
+  <rect x="572" y="390" width="192" height="150" fill="#f42e79"/>
+  <g fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M615 423 665 470 615 517"/>
+    <path d="M677 509 H725"/>
   </g>
 
-  <!-- F: terminal prompt -->
-  <rect x="570" y="390" width="195" height="150" fill="#26115f"/>
-  <g fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M618 425 L662 465 L618 505"/>
-    <path d="M686 505 L736 505"/>
-  </g>
-
-  <!-- G: contribution graph -->
-  <rect x="765" y="390" width="38" height="38" fill="#5cec7f"/><rect x="803" y="390" width="38" height="38" fill="#c24e00"/><rect x="841" y="390" width="38" height="38" fill="#5cec7f"/><rect x="879" y="390" width="38" height="38" fill="#b3a316"/><rect x="917" y="390" width="38" height="38" fill="#5cec7f"/><rect x="955" y="390" width="38" height="38" fill="#c24e00"/><rect x="993" y="390" width="38" height="38" fill="#c24e00"/><rect x="765" y="428" width="38" height="38" fill="#c24e00"/><rect x="803" y="428" width="38" height="38" fill="#c24e00"/><rect x="841" y="428" width="38" height="38" fill="#c24e00"/><rect x="879" y="428" width="38" height="38" fill="#5cec7f"/><rect x="917" y="428" width="38" height="38" fill="#c24e00"/><rect x="955" y="428" width="38" height="38" fill="#5cec7f"/><rect x="993" y="428" width="38" height="38" fill="#c24e00"/><rect x="765" y="466" width="38" height="38" fill="#5cec7f"/><rect x="803" y="466" width="38" height="38" fill="#c24e00"/><rect x="841" y="466" width="38" height="38" fill="#5cec7f"/><rect x="879" y="466" width="38" height="38" fill="#c24e00"/><rect x="917" y="466" width="38" height="38" fill="#c24e00"/><rect x="955" y="466" width="38" height="38" fill="#c24e00"/><rect x="993" y="466" width="38" height="38" fill="#5cec7f"/><rect x="765" y="504" width="38" height="38" fill="#b3a316"/><rect x="803" y="504" width="38" height="38" fill="#5cec7f"/><rect x="841" y="504" width="38" height="38" fill="#b3a316"/><rect x="879" y="504" width="38" height="38" fill="#5cec7f"/><rect x="917" y="504" width="38" height="38" fill="#c24e00"/><rect x="955" y="504" width="38" height="38" fill="#5cec7f"/><rect x="993" y="504" width="38" height="38" fill="#b3a316"/>
+  <rect x="764" y="390" width="266" height="150" fill="url(#pixels)"/>
+  <path d="M840 390 H878 V428 H916 V466 H878 V504 H840 V466 H802 V428 H840Z" fill="#b84a00"/>
 </svg>

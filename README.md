@@ -161,7 +161,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ├── public/
 │   ├── favicon.svg           # Favicon based on the original Mona artwork
 │   └── images/
-│       └── hero-arcade.svg   # Original GitHub-green and Copilot-purple tile-grid hero art
+│       └── hero-arcade.svg   # Original Mona arcade art in a bold Universe-inspired tile grid
 └── src/
     ├── layouts/
     │   └── Base.astro        # HTML shell, metadata, favicon, skip link
@@ -174,7 +174,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ### Design and accessibility notes
 
 - Dark ink and charcoal surfaces, with GitHub green as the primary accent and purple for AI and Copilot touches. The page also uses subtle grid and contribution-graph motifs.
-- The original hero artwork uses GitHub-green accents, neutral tiles, and restrained Copilot-purple details. It features Mona, a Copilot robot, a git branch, red pixel bugs, green commit squares, a terminal prompt, and a contribution-graph pattern.
+- The original hero artwork uses bold violet, hot pink, orange, and green tiles with a Mona silhouette and portrait, word pattern, curly brace, terminal prompt, and pixel motifs. It is an original workshop illustration and does not use official logos.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
 - Layouts are responsive down to 320px wide.
