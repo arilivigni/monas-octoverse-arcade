@@ -49,11 +49,11 @@ Start from the **provided canvas starter template**. Build the game UI with HTML
 | **0:15–0:25** | Everyone installs & opens the **starter canvas template** (confirm it runs) |
 | **0:25–1:15** | Build the core game inside the canvas with the Copilot App |
 | **1:15–1:35** | Pick a "power-up" stretch goal (leaderboard, sound, animation, theming) |
-| **1:35–2:00** | **Judging:** live demos, scoring, People's Choice vote, crown the winner 🏆 |
+| **1:35–2:00** | **Judging:** live demos, rubric scoring, and awards decided by the judges 🏆 |
 
 ## 🥇 Judging and picking a winner
 
-**Format:** Each team installs its extension live and gives a **90-second demo**: play the game and show it running as a canvas. The whole room scores.
+**Format:** Each team installs its extension live and gives a **90-second demo**: play the game and show it running as a canvas. Judges score each demo against the rubric.
 
 ### Scoring rubric (25 pts total)
 
@@ -161,7 +161,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ├── public/
 │   ├── favicon.svg           # Favicon based on the original Mona artwork
 │   └── images/
-│       └── hero-arcade.svg   # Original tile-grid hero art (Mona, Copilot sidekick, git branch, pixel bugs, contribution graph)
+│       └── hero-arcade.svg   # Original GitHub-green and Copilot-purple tile-grid hero art
 └── src/
     ├── layouts/
     │   └── Base.astro        # HTML shell, metadata, favicon, skip link
@@ -174,7 +174,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ### Design and accessibility notes
 
 - Dark ink and charcoal surfaces, with GitHub green as the primary accent and purple for AI and Copilot touches. The page also uses subtle grid and contribution-graph motifs.
-- The hero artwork is a colorful tile grid (lavender, pink, olive, orange, light gray, and green tiles), with a big-eyed Mona, a Copilot robot, a git branch, a terminal prompt, and a contribution-graph pattern. All of it is drawn from scratch as SVG.
+- The original hero artwork uses GitHub-green accents, neutral tiles, and restrained Copilot-purple details. It features Mona, a Copilot robot, a git branch, red pixel bugs, green commit squares, a terminal prompt, and a contribution-graph pattern.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
 - Layouts are responsive down to 320px wide.

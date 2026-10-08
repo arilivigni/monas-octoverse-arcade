@@ -1,18 +1,18 @@
 :root {
-  --ink: #010409;
-  --bg: #0d1117;
-  --surface: #161b22;
-  --surface-2: #1c2128;
-  --border: #30363d;
-  --text: #f0f6fc;
-  --muted: #9198a1;
-  --green: #3fb950;
-  --green-bright: #39d353;
-  --green-soft: #7ee787;
-  --green-deep: #0e4429;
-  --purple: #a371f7;
-  --purple-soft: #d2a8ff;
-  --purple-deep: #2a1a4a;
+  --ink: #101411;
+  --bg: #101411;
+  --surface: #232925;
+  --surface-2: #232925;
+  --border: #424a45;
+  --text: #f2f5f3;
+  --muted: #b6bfb8;
+  --green: #0fbf3e;
+  --green-bright: #5fed83;
+  --green-soft: #bfffd1;
+  --green-deep: #0a241b;
+  --purple: #8534f3;
+  --purple-soft: #c898fd;
+  --purple-deep: #26115f;
   --red: #f85149;
   --radius: 14px;
   --font-sans: 'Mona Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
@@ -35,8 +35,8 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    radial-gradient(60rem 30rem at 85% -10%, rgb(163 113 247 / 0.14), transparent 60%),
-    radial-gradient(50rem 30rem at 0% 0%, rgb(63 185 80 / 0.12), transparent 60%);
+    radial-gradient(60rem 30rem at 85% -10%, rgb(133 52 243 / 0.14), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 0%, rgb(15 191 62 / 0.12), transparent 60%);
   background-repeat: no-repeat;
   color: var(--text);
   font-family: var(--font-sans);

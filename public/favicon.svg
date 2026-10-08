@@ -16,7 +16,7 @@
     </radialGradient>
     <clipPath id="f-clip"><rect width="64" height="64" rx="14"/></clipPath>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#b98aff"/>
+  <rect width="64" height="64" rx="14" fill="#0fbf3e"/>
   <g clip-path="url(#f-clip)">
   <g transform="translate(32 34) scale(.17) translate(-795 -215)">
   <g id="f-mona">

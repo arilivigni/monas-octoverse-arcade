@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 540" role="img" aria-labelledby="title desc">
   <title id="title">Mona's Octoverse Arcade</title>
-  <desc id="desc">Original workshop artwork in a colorful tile grid: a big-eyed, Octocat-inspired Mona in a green headband beside an orange curly brace; a purple Copilot robot sidekick; a git branch line; a tile of monospace words "ship", "play", and "commit"; green pixel bugs and commit squares; a terminal prompt; and a contribution-graph pixel pattern.</desc>
+  <desc id="desc">Original workshop artwork in a GitHub-green, neutral, and Copilot-purple tile grid: a big-eyed, Octocat-inspired Mona in a green headband beside a green curly brace; a purple Copilot robot sidekick; a git branch line; a tile of monospace words "ship", "play", and "commit"; red pixel bugs and green commit squares; a terminal prompt; and a green contribution-graph pixel pattern.</desc>
   <defs>
+    <style>
+      #pixbug { fill: #cf222e; }
+      rect[fill="#c24e00"] { fill: #08872b; }
+      rect[fill="#b3a316"] { fill: #0a241b; }
+      rect[fill="#5cec7f"] { fill: #0fbf3e; }
+    </style>
     <linearGradient id="m-face" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f9b4cf"/>
       <stop offset=".55" stop-color="#f8b89c"/>
@@ -37,16 +43,16 @@
   </g>
 
   <!-- B: git branch -->
-  <rect x="0" y="195" width="190" height="345" fill="#f53b7c"/>
-  <g clip-path="url(#clipB)" fill="none" stroke="#b3a316" stroke-width="28" stroke-linecap="round">
+  <rect x="0" y="195" width="190" height="345" fill="#0a241b"/>
+  <g clip-path="url(#clipB)" fill="none" stroke="#0fbf3e" stroke-width="28" stroke-linecap="round">
     <circle cx="75" cy="225" r="24"/>
     <path d="M75 249 C75 310 150 300 150 370 C150 440 30 430 30 510 L30 560"/>
     <circle cx="150" cy="370" r="2" stroke-width="40"/>
   </g>
 
   <!-- C: word pattern -->
-  <rect x="190" y="0" width="370" height="390" fill="#d9d9d9"/>
-  <g clip-path="url(#clipC)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#1b1532">
+  <rect x="190" y="0" width="370" height="390" fill="#f2f5f3"/>
+  <g clip-path="url(#clipC)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#101411">
       <text x="210" y="40">ship</text>
       <text x="200" y="84">commit</text>
       <text x="285" y="84">play</text>
@@ -66,7 +72,7 @@
   </g>
 
   <!-- D: Mona -->
-  <rect x="560" y="0" width="470" height="390" fill="#b98aff"/>
+  <rect x="560" y="0" width="470" height="390" fill="#c898fd"/>
   <g clip-path="url(#clipD)">
     <g transform="translate(20 0)">
   <g id="m-mona">
@@ -97,10 +103,10 @@
   </g>
     </g>
   </g>
-  <path d="M640 0 L640 0 C590 0 590 30 590 80 L590 150 C590 182 575 195 540 195 C575 195 590 208 590 240 L590 310 C590 360 590 390 640 390" fill="none" stroke="#c24e00" stroke-width="44"/>
+  <path d="M640 0 L640 0 C590 0 590 30 590 80 L590 150 C590 182 575 195 540 195 C575 195 590 208 590 240 L590 310 C590 360 590 390 640 390" fill="none" stroke="#0fbf3e" stroke-width="44"/>
 
   <!-- E: pixel bugs and commits -->
-  <rect x="190" y="390" width="380" height="150" fill="#1b1532"/>
+  <rect x="190" y="390" width="380" height="150" fill="#101411"/>
   <g clip-path="url(#clipE)">
       <rect x="208" y="402" width="24" height="24" rx="5" fill="#5cec7f"/>
       <use href="#pixbug" x="250" y="398"/>
@@ -135,7 +141,7 @@
   </g>
 
   <!-- F: terminal prompt -->
-  <rect x="570" y="390" width="195" height="150" fill="#f53b7c"/>
+  <rect x="570" y="390" width="195" height="150" fill="#26115f"/>
   <g fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
     <path d="M618 425 L662 465 L618 505"/>
     <path d="M686 505 L736 505"/>
