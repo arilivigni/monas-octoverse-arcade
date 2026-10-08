@@ -128,7 +128,25 @@ Run these from the repository root:
 
 ### Build output
 
-`npm run build` writes a fully static site to `dist/` (an `index.html` plus the assets in `public/`). You can deploy that folder to any static host, such as GitHub Pages. If you host the site under a sub-path, set `base` in `astro.config.mjs`. Asset URLs on the page already respect Astro's `BASE_URL`.
+`npm run build` writes a fully static site to `dist/` (an `index.html` plus the assets in `public/`). You can deploy that folder to any static host.
+
+`astro.config.mjs` reads two optional environment variables: `SITE_URL` (the site origin) and `BASE_PATH` (the sub-path). Locally they're unset, so the site is served from `/`. To test a sub-path build:
+
+```bash
+SITE_URL=https://arilivigni.github.io BASE_PATH=/monas-octoverse-arcade npm run build
+```
+
+### Deploying to GitHub Pages
+
+`.github/workflows/deploy-pages.yml` builds the site and publishes it to GitHub Pages. It runs on every push to `main` and can also be started by hand from the **Actions** tab (**Run workflow**). The workflow gets the correct origin and sub-path from `actions/configure-pages`, so links and assets work at `https://<owner>.github.io/<repo>/` or on a custom domain.
+
+One-time setup:
+
+1. Go to **Settings → Pages** in the repository.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+3. Push to `main` (or run the workflow). The site URL appears in the workflow run summary and in **Settings → Pages**.
+
+> **Private repository note:** GitHub Pages for private repositories requires a GitHub Pro, Team, Enterprise Cloud, or Enterprise Server plan. On GitHub Free, make the repository public to publish the site. On Enterprise Cloud you can also limit who can view the site.
 
 The page loads no remote images, fonts, or scripts at runtime. The only JavaScript on the page is a small inline script that turns on the "Copy prompt" button, and the page works without it.
 
@@ -136,12 +154,14 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 
 ```text
 .
-├── astro.config.mjs          # Astro configuration (static output)
+├── .github/workflows/
+│   └── deploy-pages.yml      # Build and deploy to GitHub Pages
+├── astro.config.mjs          # Astro configuration (static output, SITE_URL/BASE_PATH support)
 ├── package.json              # Scripts and the single dependency: astro
 ├── public/
 │   ├── favicon.svg           # Favicon based on the original Mona artwork
 │   └── images/
-│       └── hero-arcade.svg   # Original hero illustration (Mona, Copilot sidekick, commits, bugs, stars)
+│       └── hero-arcade.svg   # Original tile-grid hero art (Mona, Copilot sidekick, git branch, pixel bugs, contribution graph)
 └── src/
     ├── layouts/
     │   └── Base.astro        # HTML shell, metadata, favicon, skip link
@@ -154,6 +174,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ### Design and accessibility notes
 
 - Dark ink and charcoal surfaces, with GitHub green as the primary accent and purple for AI and Copilot touches. The page also uses subtle grid and contribution-graph motifs.
+- The hero artwork is a colorful tile grid (lavender, pink, olive, orange, light gray, and green tiles), with a big-eyed Mona, a Copilot robot, a git branch, a terminal prompt, and a contribution-graph pattern. All of it is drawn from scratch as SVG.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
 - Layouts are responsive down to 320px wide.
