@@ -15,11 +15,9 @@
       <rect width="78" height="64" fill="#170d2a"/>
       <path d="M-12 16 C-3 -2 16 -2 26 14 C34 27 48 27 56 13 C64 -1 78 0 88 16 M-12 56 C-3 38 16 38 26 54 C34 67 48 67 56 53 C64 39 78 40 88 56" fill="none" stroke="#159447" stroke-width="18" stroke-linecap="round"/>
     </pattern>
-    <pattern id="pixels" width="76" height="76" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="38" height="38" fill="#b3a316"/>
-      <rect x="38" y="38" width="38" height="38" fill="#b3a316"/>
-      <rect x="38" y="0" width="38" height="38" fill="#58ed7c"/>
-      <rect x="0" y="38" width="38" height="38" fill="#58ed7c"/>
+    <pattern id="pixels" width="38" height="38" patternUnits="userSpaceOnUse">
+      <rect width="38" height="38" fill="#58ed7c"/>
+      <rect x="19" y="19" width="19" height="19" fill="#b3a316"/>
     </pattern>
     <clipPath id="words-tile"><rect x="192" y="0" width="380" height="390"/></clipPath>
     <clipPath id="mona-tile"><rect x="572" y="0" width="458" height="390"/></clipPath>
@@ -28,7 +26,6 @@
 
   <rect width="1030" height="540" fill="#170d2a"/>
 
-  <rect width="192" height="198" fill="#170d2a"/>
   <g clip-path="url(#silhouette-tile)" fill="#5a3cff">
     <path d="M27 57 67 21 Q101 1 139 14 L159 -8 Q174 20 182 54 Q198 117 159 146 Q137 163 104 160 Q72 156 42 134 Q7 108 12 83 Q14 69 27 57Z"/>
     <path d="M79 143 Q106 142 129 157 Q153 174 159 207 L49 207 Q57 170 79 143Z"/>
@@ -37,7 +34,7 @@
 
   <rect x="192" width="380" height="390" fill="#d9d9d9"/>
   <g clip-path="url(#words-tile)" fill="#241830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">
-    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="515" y="28">tgthr</text>
+    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="500" y="28">tgthr</text>
     <text x="198" y="71">tgthr</text><text x="289" y="71">now</text><text x="525" y="71">now</text>
     <text x="289" y="114">all</text><text x="359" y="114">tgthr</text>
     <text x="368" y="157">now</text><text x="446" y="157">all</text>
