@@ -15,7 +15,7 @@
       <rect width="78" height="64" fill="#170d2a"/>
       <path d="M-12 16 C-3 -2 16 -2 26 14 C34 27 48 27 56 13 C64 -1 78 0 88 16 M-12 56 C-3 38 16 38 26 54 C34 67 48 67 56 53 C64 39 78 40 88 56" fill="none" stroke="#159447" stroke-width="18" stroke-linecap="round"/>
     </pattern>
-    <pattern id="pixels" width="38" height="38" patternUnits="userSpaceOnUse" patternTransform="translate(4 0)">
+    <pattern id="pixels" x="764" y="390" width="38" height="38" patternUnits="userSpaceOnUse">
       <rect width="38" height="38" fill="#58ed7c"/>
       <rect x="19" y="19" width="19" height="19" fill="#b3a316"/>
     </pattern>
@@ -35,8 +35,8 @@
 
   <rect x="192" width="380" height="390" fill="#d9d9d9"/>
   <g clip-path="url(#words-tile)" fill="#241830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">
-    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="500" y="28">tgthr</text>
-    <text x="198" y="71">tgthr</text><text x="289" y="71">now</text><text x="525" y="71">now</text>
+    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="490" y="28">tgthr</text>
+    <text x="198" y="71">tgthr</text><text x="289" y="71">now</text><text x="510" y="71">now</text>
     <text x="289" y="114">all</text><text x="359" y="114">tgthr</text>
     <text x="368" y="157">now</text><text x="446" y="157">all</text>
     <text x="198" y="201">tgthr</text><text x="435" y="201">tgthr</text>
@@ -70,7 +70,7 @@
 
   <rect y="198" width="192" height="342" fill="#f42e79"/>
   <g clip-path="url(#branch-tile)">
-    <path d="M24 204 H115 Q146 204 151 229 Q154 253 137 268 L89 313 Q69 333 83 351 L161 430 Q190 460 163 486 Q148 500 127 485 L50 408 Q22 380 47 351 L107 286 Q121 270 110 259 Q103 252 90 252 H24Z" fill="none" stroke="#b3a316" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 204 H115 Q146 204 151 229 Q154 253 137 268 L89 313 Q69 333 83 351 L161 430 Q180 460 163 486 Q148 500 127 485 L50 408 Q22 380 47 351 L107 286 Q121 270 110 259 Q103 252 90 252 H24Z" fill="none" stroke="#b3a316" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="78" cy="204" r="23" fill="#f42e79"/>
   </g>
 
