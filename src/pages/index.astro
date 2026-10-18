@@ -52,7 +52,7 @@ const rubricTotal = rubric.reduce((sum, r) => sum + r.points, 0);
 const awards = [
   { emoji: '🥇', name: 'Overall Winner', text: 'Best total rubric score across all criteria.' },
   { emoji: '🎨', name: 'Best Design', text: 'The best-looking, most visually striking game (Polish).' },
-  { emoji: '🎉', name: 'Most Fun', text: 'The game everyone wanted to keep playing (Fun factor).' },
+  { emoji: '🎉', name: 'Most Fun', text: 'The game the judges most wanted to keep playing (Fun factor).' },
 ];
 
 const principles = [
@@ -267,7 +267,8 @@ const checklist = [
         <h2 id="judging-title">Scoring rubric ({rubricTotal} points total)</h2>
         <p class="section-intro">
           <strong>Demo format:</strong> in the final block (1:35–2:00), each team installs its extension live and gives
-          a <strong>90-second demo</strong> — play it and show it running as a canvas. Judges score each demo against the rubric.
+          a <strong>90-second demo</strong> — play it and show it running as a canvas. Judges score every submission
+          against the 25-point rubric and choose all three award winners. There is no audience vote.
         </p>
         <div class="table-wrap">
           <table class="rubric">
@@ -324,7 +325,7 @@ const checklist = [
         </ul>
         <div class="callout callout-purple">
           <p>
-            <strong>Tie &amp; rollover rule:</strong> a team can win more than one category, but if the Overall Winner
+            <strong>Award rollover rule:</strong> a team can win more than one category, but if the Overall Winner
             also tops another category, that second award rolls to the runner-up to spread the recognition.
           </p>
         </div>

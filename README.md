@@ -53,7 +53,7 @@ Start from the **provided canvas starter template**. Build the game UI with HTML
 
 ## 🥇 Judging and picking a winner
 
-**Format:** Each team installs its extension live and gives a **90-second demo**: play the game and show it running as a canvas. Judges score each demo against the rubric.
+**Format:** Each team installs its extension live and gives a **90-second demo**: play the game and show it running as a canvas. Judges score every submission against the 25-point rubric and choose all three award winners. There is no audience vote.
 
 ### Scoring rubric (25 pts total)
 
@@ -73,7 +73,7 @@ The **judges decide** all three categories. Each category winner takes home **sw
 | --- | --- |
 | **🥇 Overall Winner** | Best total rubric score across all criteria |
 | **🎨 Best Design** | The best-looking, most visually striking game (Polish) |
-| **🎉 Most Fun** | The game everyone wanted to keep playing (Fun factor) |
+| **🎉 Most Fun** | The game the judges most wanted to keep playing (Fun factor) |
 
 > A team can win more than one category. However, if the Overall Winner also tops another category, that second award rolls to the runner-up to spread the recognition.
 

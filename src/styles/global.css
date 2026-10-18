@@ -349,6 +349,10 @@ p {
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
+.btn[hidden] {
+  display: none;
+}
+
 .btn-primary {
   background: var(--green);
   color: var(--ink);
