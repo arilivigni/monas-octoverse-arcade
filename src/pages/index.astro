@@ -8,36 +8,53 @@ const description =
   'Attendee guide for the GitHub Day of Learning 2-hour workshop game challenge: build Mona’s Octoverse Arcade as a Copilot App canvas extension.';
 
 const nav = [
-  { href: '#overview', label: 'Overview' },
-  { href: '#deliverable', label: 'Deliverable' },
-  { href: '#canvas', label: 'Canvas extension' },
   { href: '#prompt', label: 'Prompt' },
+  { href: '#teams', label: 'Teams' },
+  { href: '#canvas', label: 'Canvas extension' },
   { href: '#agenda', label: 'Agenda' },
+  { href: '#submit', label: 'Submit' },
   { href: '#judging', label: 'Judging' },
   { href: '#awards', label: 'Awards' },
   { href: '#principles', label: 'Principles' },
-  { href: '#themes', label: 'Alt themes' },
-  { href: '#checklist', label: 'Demo checklist' },
+  { href: '#themes', label: 'Future ideas' },
 ];
 
-const gameFeatures = [
-  { icon: 'commit', title: 'Collect commits', text: 'Mona collects green commit squares.' },
-  { icon: 'bug', title: 'Dodge bugs', text: 'Steer clear of the red bugs.' },
-  { icon: 'score', title: 'Track the score', text: 'Keep a running score on screen.' },
-  { icon: 'speed', title: 'Speed up', text: 'The game gets faster over time.' },
-  { icon: 'restart', title: 'Game over & restart', text: 'Show a game-over screen with a restart button.' },
-  { icon: 'copilot', title: 'Copilot tips', text: 'Copilot gives an encouraging tip every 10 points.' },
+const baseline = [
+  'Mona collects green commit squares and dodges red bugs.',
+  'The score is tracked, and the speed increases over time.',
+  'A game-over screen has a restart button.',
+  'Copilot cheers you on with a tip every 10 points.',
+];
+
+const spins = [
+  { title: 'Rethink the world', text: 'Levels, settings, and a story that make Mona’s arcade feel like yours.' },
+  { title: 'Invent power-ups', text: 'Shields, magnets, merge combos, or boss bugs. Surprise the judges.' },
+  { title: 'Give Copilot personality', text: 'Make the sidekick funny, helpful, or full of surprises.' },
+  { title: 'Find your style', text: 'Art direction, animation, and sound that make people want to keep playing.' },
+];
+
+const teamRules = [
+  { value: '4–6', title: 'People per team', text: 'Minimum 4, maximum 6. Aim for 5.' },
+  { value: 'Name', title: 'Choose a team name', text: 'Pick it during kickoff. You’ll use it on your submission.' },
+  { value: '1', title: 'Shared repository', text: 'Keep your team’s extension in one repository that judges can open.' },
+];
+
+const submission = [
+  { title: 'Team name', text: 'The name your team chose at kickoff.' },
+  { title: 'Description', text: 'A few sentences about your game, your creative spin, and your power-up.' },
+  { title: 'Demo video', text: 'Up to 90 seconds. Install the extension, open it as a canvas, and play. Attach the video to your comment or add a link.' },
+  { title: 'Repository link', text: 'The repository that contains your extension folder. Make sure the judges can access it.' },
 ];
 
 const prompt =
   'Build a Copilot App canvas extension called Mona’s Octoverse Arcade. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step.';
 
 const agenda = [
-  { time: '0:00–0:15', minutes: 15, phase: 'Kickoff', detail: 'Demo the target canvas extension, share the idea, the starter prompt, and the rubric.' },
-  { time: '0:15–0:25', minutes: 10, phase: 'Install the starter', detail: 'Everyone installs and opens the starter canvas template — confirm it runs.' },
-  { time: '0:25–1:15', minutes: 50, phase: 'Build the core game', detail: 'Build the core game inside the canvas with the Copilot App.' },
-  { time: '1:15–1:35', minutes: 20, phase: 'Power-up', detail: 'Pick a “power-up” stretch goal: leaderboard, sound, animation, or theming.' },
-  { time: '1:35–2:00', minutes: 25, phase: 'Judging', detail: 'Live demos, rubric scoring, and awards decided by the judges. 🏆' },
+  { time: '0:00–0:15', minutes: 15, phase: 'Kickoff & teams', detail: 'See the target canvas extension, get the starter prompt and rubric, form teams of 4–6, and choose a team name.' },
+  { time: '0:15–0:25', minutes: 10, phase: 'Install the starter', detail: 'Every team installs and opens the starter canvas template — confirm it runs.' },
+  { time: '0:25–1:15', minutes: 50, phase: 'Build your game', detail: 'Start from the prompt, then build your team’s version inside the canvas with the Copilot App.' },
+  { time: '1:15–1:35', minutes: 20, phase: 'Power-up', detail: 'Pick a “power-up” stretch goal: leaderboard, sound, animation, theming, or your own idea.' },
+  { time: '1:35–2:00', minutes: 25, phase: 'Record & submit', detail: 'Record a demo video of up to 90 seconds and post your submission in the challenge Discussion before the workshop ends. 🏆' },
 ];
 
 const rubric = [
@@ -59,7 +76,7 @@ const principles = [
   { title: 'Rubric up front', text: 'Ship the rubric up front so teams build toward what’s judged.' },
   { title: 'Known-good starter', text: 'Provide a known-good canvas starter so “install & run” is achievable for everyone.' },
   { title: 'Reward working software', text: 'The rubric weights “it runs” highest — 8 of 25 points for installing and running as a canvas.' },
-  { title: 'Shared theme, personal spin', text: 'Everyone builds Mona’s Arcade, but customizes it.' },
+  { title: 'Shared theme, personal spin', text: 'Every team starts from the same prompt and builds Mona’s Arcade, then makes it its own.' },
 ];
 
 const themes = [
@@ -69,26 +86,13 @@ const themes = [
   { name: 'PR Review Simulator', concept: 'Card-swipe game (approve/request changes).', twist: 'Learn code-review etiquette; Mona is the author, Copilot the reviewer.' },
   { name: 'Mona’s Sticker Maker', concept: 'Canvas drawing + Octocat generator.', twist: 'Compose your own Octocat; export as PNG.' },
 ];
-
-const checklist = [
-  'Your extension lives in its own folder with an extension.mjs that registers a canvas.',
-  'It installs cleanly into the Copilot App (install_extension from a gist or repo folder, or dropped into the extensions directory).',
-  'It opens with open_canvas and the game renders in the side panel.',
-  'Mona collects green commit squares and dodges red bugs.',
-  'The score is tracked and the speed increases over time.',
-  'A game-over screen appears with a working restart button.',
-  'Copilot pops in with an encouraging tip every 10 points.',
-  'Everything is HTML/CSS/vanilla JS inside the canvas — no external build step.',
-  'Your power-up stretch feature is ready to show off.',
-  'You’ve rehearsed a 90-second demo: install live, play it, show it running as a canvas.',
-];
 ---
 
 <Base title={title} description={description}>
   <header class="site-header">
     <div class="container header-inner">
       <a class="wordmark" href="#top" aria-label="Mona’s Octoverse Arcade — back to top">
-        <img src={`${base}favicon.svg`} alt="" width="32" height="32" />
+        <span class="arcade-mark" aria-hidden="true">+</span>
         <span>Mona’s <strong>Octoverse Arcade</strong></span>
       </a>
       <nav aria-label="Sections">
@@ -105,86 +109,117 @@ const checklist = [
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
+          <div class="hero-heading">
           <p class="eyebrow">GitHub Day of Learning · 2-hour workshop game challenge</p>
           <h1 id="hero-title">
             <span class="title-small">Mona’s</span>
             <span class="title-big">Octoverse Arcade</span>
           </h1>
           <p class="edition"><span class="pill pill-purple">Canvas Extension Edition</span></p>
+          </div>
+          <div class="hero-summary">
           <p class="lede">
             Build a browser game starring <strong>Mona</strong> the Octocat as the hero and <strong>Copilot</strong> as
-            the sidekick — and ship it as a <strong>Copilot App canvas extension</strong> that installs and runs inside
-            the Copilot App. At the end, we judge every submission and crown a winner.
+            the sidekick, then ship it as a <strong>Copilot App canvas extension</strong>. Every team starts from one
+            prompt. What you build from it is up to you.
           </p>
           <ul class="stats" aria-label="At a glance">
             <li><span class="stat-num">2</span><span class="stat-label">hours</span></li>
+            <li><span class="stat-num">4–6</span><span class="stat-label">people per team</span></li>
             <li><span class="stat-num">25</span><span class="stat-label">rubric points</span></li>
             <li><span class="stat-num">3</span><span class="stat-label">award categories</span></li>
-            <li><span class="stat-num">90s</span><span class="stat-label">live demos</span></li>
           </ul>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#overview">Read the challenge</a>
-            <a class="btn btn-ghost" href="#prompt">Get the starter prompt</a>
+            <a class="btn btn-primary" href="#prompt">Get the starter prompt</a>
+            <a class="btn btn-ghost" href="#teams">Form your team</a>
+          </div>
           </div>
         </div>
         <figure class="hero-art">
           <img
-            src={`${base}images/hero-arcade.svg`}
-            width="1030"
-            height="540"
-            alt="Original arcade tile artwork: a violet Mona silhouette, a pale tile patterned with “all”, “tgthr”, and “now”, an orange curly brace, Mona’s smiling portrait on lavender, a pink branching motif, a repeating green-and-purple pattern, a terminal prompt, and bright green pixel blocks."
+            src={`${base}images/arcade-hero.png`}
+            width="2000"
+            height="778"
+            fetchpriority="high"
+            alt="Mona perched on green blocks beneath a white sprout, surrounded by pastel clouds and a blue sky."
           />
         </figure>
       </div>
     </section>
 
-    <section id="overview" class="section" aria-labelledby="overview-title">
+    <section id="prompt" class="section section-prompt" aria-labelledby="prompt-title">
       <div class="container">
-        <p class="kicker">01 · Challenge overview</p>
-        <h2 id="overview-title">The game you’ll build</h2>
+        <p class="kicker">01 · Start here</p>
+        <h2 id="prompt-title">One prompt. Your game.</h2>
         <p class="section-intro">
-          Every team builds the same core arcade game, then adds its own spin. Here’s what the core game needs to do:
+          Every team starts with this prompt in the Copilot App. It sets the baseline, not the limit. Build what it asks,
+          then take the game somewhere only your team would.
         </p>
-        <ul class="feature-grid">
-          {gameFeatures.map((f) => (
-            <li class="card feature">
-              <span class={`feature-icon icon-${f.icon}`} aria-hidden="true"></span>
-              <h3>{f.title}</h3>
-              <p>{f.text}</p>
-            </li>
-          ))}
-        </ul>
+        <figure class="prompt-card prompt-feature">
+          <div class="prompt-bar">
+            <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="prompt-label">starter-prompt.txt</span>
+            <button type="button" class="btn btn-small" id="copy-prompt" hidden>Copy prompt</button>
+          </div>
+          <blockquote id="prompt-text"><p>{prompt}</p></blockquote>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </figure>
+        <div class="prompt-extras">
+          <div class="baseline">
+            <h3>The baseline</h3>
+            <ul>
+              {baseline.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+          <div>
+            <h3>Make it yours</h3>
+            <ul class="spin-grid">
+              {spins.map((s) => (
+                <li class="card">
+                  <h4>{s.title}</h4>
+                  <p>{s.text}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="deliverable" class="section section-alt" aria-labelledby="deliverable-title">
-      <div class="container two-col">
-        <div>
-          <p class="kicker">02 · Goal &amp; deliverable</p>
-          <h2 id="deliverable-title">Ship it as a canvas extension</h2>
+    <section id="teams" class="section section-alt" aria-labelledby="teams-title">
+      <div class="container">
+        <p class="kicker">02 · Teams</p>
+        <h2 id="teams-title">Build as a team</h2>
+        <p class="section-intro">
+          Up to 150 people may take part, so everyone builds in a team. Form your team and choose a team name during
+          kickoff.
+        </p>
+        <ul class="team-grid">
+          {teamRules.map((t) => (
+            <li class="card team-card">
+              <span class="team-value" aria-hidden="true">{t.value}</span>
+              <h3>{t.title}</h3>
+              <p>{t.text}</p>
+            </li>
+          ))}
+        </ul>
+        <div class="callout">
           <p>
-            The game can’t just be a loose HTML file. Your deliverable is a <strong>Copilot App canvas extension</strong>
-            that can be installed and launched inside the Copilot App itself.
-          </p>
-          <p>
-            <strong>Why this raises the bar (in a good way):</strong> you learn the real extension model — manifest,
-            canvas registration, install, and launch — not just front-end code. It’s the “GitHub twist” that makes the
-            challenge platform-native.
+            <strong>Planning numbers:</strong> with 150 participants, teams of 5 make about 30 teams (25–38, depending on
+            team size). If your group has fewer than 4 people, join another group. If it has more than 6, split into two
+            teams.
           </p>
         </div>
-        <ol class="flow" aria-label="Deliverable flow">
-          <li><span class="flow-step">Build</span><span>A playable game inside a canvas</span></li>
-          <li><span class="flow-step">Install</span><span>Into the Copilot App</span></li>
-          <li><span class="flow-step">Open</span><span>Playable in the side panel</span></li>
-        </ol>
       </div>
     </section>
 
     <section id="canvas" class="section" aria-labelledby="canvas-title">
       <div class="container">
         <p class="kicker">03 · Core requirement</p>
-        <h2 id="canvas-title">Canvas extension requirements</h2>
-        <p class="section-intro">Your game must be a Copilot canvas extension that:</p>
+        <h2 id="canvas-title">Ship it as a canvas extension</h2>
+        <p class="section-intro">
+          Your game can’t be a loose HTML file. It must be a <strong>Copilot App canvas extension</strong> that:
+        </p>
         <ol class="req-list">
           <li class="card">
             <span class="req-num" aria-hidden="true">1</span>
@@ -217,32 +252,17 @@ const checklist = [
         <div class="callout">
           <p>
             <strong>Start from the provided canvas starter template.</strong> Build the game UI with HTML, CSS, and
-            vanilla JavaScript inside the canvas — no external build step.
+            vanilla JavaScript inside the canvas — no external build step. You’ll learn the real extension model:
+            manifest, canvas registration, install, and launch. That’s the “GitHub twist” that makes the challenge
+            platform-native.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="prompt" class="section section-alt" aria-labelledby="prompt-title">
+    <section id="agenda" class="section section-alt" aria-labelledby="agenda-title">
       <div class="container">
-        <p class="kicker">04 · Participant prompt</p>
-        <h2 id="prompt-title">Your initial prompt</h2>
-        <p class="section-intro">Paste this into the Copilot App to get started, then make it your own.</p>
-        <figure class="prompt-card">
-          <div class="prompt-bar">
-            <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
-            <span class="prompt-label">starter-prompt.txt</span>
-            <button type="button" class="btn btn-small" id="copy-prompt" hidden>Copy prompt</button>
-          </div>
-          <blockquote id="prompt-text"><p>{prompt}</p></blockquote>
-          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
-        </figure>
-      </div>
-    </section>
-
-    <section id="agenda" class="section" aria-labelledby="agenda-title">
-      <div class="container">
-        <p class="kicker">05 · Timed agenda</p>
+        <p class="kicker">04 · Timed agenda</p>
         <h2 id="agenda-title">Two hours, five phases</h2>
         <ol class="timeline">
           {agenda.map((a) => (
@@ -261,14 +281,36 @@ const checklist = [
       </div>
     </section>
 
+    <section id="submit" class="section" aria-labelledby="submit-title">
+      <div class="container">
+        <p class="kicker">05 · Submit</p>
+        <h2 id="submit-title">Submit in the challenge Discussion</h2>
+        <p class="section-intro">
+          Before the workshop ends at 2:00, one teammate posts your team’s submission as a single comment in the
+          challenge Discussion. Your facilitator will share the link. Include:
+        </p>
+        <ol class="req-list submit-list">
+          {submission.map((item, i) => (
+            <li class="card">
+              <span class="req-num" aria-hidden="true">{i + 1}</span>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
     <section id="judging" class="section section-alt" aria-labelledby="judging-title">
       <div class="container">
         <p class="kicker">06 · Judging</p>
         <h2 id="judging-title">Scoring rubric ({rubricTotal} points total)</h2>
         <p class="section-intro">
-          <strong>Demo format:</strong> in the final block (1:35–2:00), each team installs its extension live and gives
-          a <strong>90-second demo</strong> — play it and show it running as a canvas. Judges score every submission
-          against the 25-point rubric and choose all three award winners. There is no audience vote.
+          <strong>How judging works:</strong> after the workshop, judges review every submission’s demo video and
+          repository against the 25-point rubric. They choose all three award winners and announce them in the challenge
+          Discussion. There is no audience vote.
         </p>
         <div class="table-wrap">
           <table class="rubric">
@@ -350,9 +392,12 @@ const checklist = [
 
     <section id="themes" class="section" aria-labelledby="themes-title">
       <div class="container">
-        <p class="kicker">09 · Alternate themes</p>
-        <h2 id="themes-title">Alternate theme options</h2>
-        <p class="section-intro">Same format and same rubric — just a different idea.</p>
+        <p class="kicker">09 · Beyond the workshop</p>
+        <h2 id="themes-title">Ideas for your next canvas extension</h2>
+        <p class="section-intro">
+          Inspiration for after the workshop — not submissions for this competition. Every team builds Mona’s Arcade
+          for this challenge, with the shared gameplay requirements and 25-point rubric.
+        </p>
         <ul class="theme-grid">
           {themes.map((t) => (
             <li class="card theme">
@@ -369,19 +414,29 @@ const checklist = [
       </div>
     </section>
 
-    <section id="checklist" class="section section-alt" aria-labelledby="checklist-title">
+    <section class="section section-alt arcade-showcase" aria-labelledby="arcade-showcase-title">
       <div class="container">
-        <p class="kicker">10 · Before you demo</p>
-        <h2 id="checklist-title">Quick demo checklist</h2>
-        <p class="section-intro">Tick these off before your 90 seconds in the spotlight.</p>
-        <ul class="checklist">
-          {checklist.map((item, i) => (
-            <li>
-              <input type="checkbox" id={`check-${i}`} />
-              <label for={`check-${i}`}>{item}</label>
-            </li>
-          ))}
-        </ul>
+        <div class="showcase-heading">
+          <div>
+            <p class="kicker">Built with imagination</p>
+            <h2 id="arcade-showcase-title">One Mona. Endless possibilities.</h2>
+          </div>
+          <p class="section-intro">Bring your own creative spin to the arcade. Keep Mona at the heart of the game, and make something worth playing again.</p>
+        </div>
+        <div class="artwork-grid">
+          <figure class="artwork-panel">
+            <img src={`${base}images/universe-2026.png`} width="1200" height="630" loading="lazy"
+              alt="GitHub Universe ’26 artwork with Mona and colorful silhouettes. The original event lockup reads October 2026, San Francisco, CA." />
+            <figcaption>Universe ’26 · Supplied event artwork, not workshop event details.</figcaption>
+            <img class="artwork-pattern" src={`${base}images/pattern-green-pink.png`} width="534" height="288" loading="lazy" alt="" />
+          </figure>
+          <figure class="artwork-panel">
+            <img src={`${base}images/mona-clouds.png`} width="1200" height="630" loading="lazy"
+              alt="Mona looking toward a glowing white butterfly, surrounded by pastel clouds against a blue sky." />
+            <figcaption>A little curiosity. A whole new world to build.</figcaption>
+            <img class="artwork-pattern" src={`${base}images/pattern-gold-orange.png`} width="522" height="296" loading="lazy" alt="" />
+          </figure>
+        </div>
       </div>
     </section>
   </main>
@@ -392,7 +447,8 @@ const checklist = [
       <p>
         An independent workshop resource for a GitHub Day of Learning session. This is not an official GitHub Universe
         or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of
-        GitHub, Inc. Character artwork on this site is original, Octocat-inspired workshop illustration.
+        GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Universe event details shown in that artwork
+        are not the workshop’s event details.
       </p>
       <p><a href="#top">Back to top ↑</a></p>
     </div>

@@ -1,50 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <title>Mona's Octoverse Arcade</title>
-  <defs>
-    <linearGradient id="f-face" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f9b4cf"/>
-      <stop offset=".55" stop-color="#f8b89c"/>
-      <stop offset="1" stop-color="#ee8aa4"/>
-    </linearGradient>
-    <radialGradient id="f-blush">
-      <stop offset="0" stop-color="#ef5f86" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#ef5f86" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="f-iris" cx=".45" cy=".4" r=".65">
-      <stop offset="0" stop-color="#5b48a8"/>
-      <stop offset="1" stop-color="#1b1240"/>
-    </radialGradient>
-    <clipPath id="f-clip"><rect width="64" height="64" rx="14"/></clipPath>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="#5a3cff"/>
-  <g clip-path="url(#f-clip)">
-  <g transform="translate(32 34) scale(.17) translate(-795 -215)">
-  <g id="f-mona">
-    <ellipse cx="795" cy="440" rx="160" ry="90" fill="#1b1532"/>
-    <path d="M650 230 C645 170 650 120 668 58 C700 72 730 92 752 108 C782 100 810 100 838 108 C860 92 890 72 922 58 C940 120 945 170 940 230 C935 312 870 348 795 348 C720 348 655 312 650 230 Z" fill="#1b1532"/>
-    <path d="M690 218 C690 162 730 146 795 146 C860 146 900 162 900 218 C900 292 860 324 795 324 C730 324 690 292 690 218 Z" fill="url(#f-face)"/>
-    <ellipse cx="722" cy="268" rx="34" ry="22" fill="url(#f-blush)"/>
-    <ellipse cx="868" cy="268" rx="34" ry="22" fill="url(#f-blush)"/>
-    <path d="M660 150 Q795 98 930 150 L932 172 Q795 122 658 172 Z" fill="#2ea043"/>
-    <path d="M926 152 L962 136 L956 170 Z" fill="#2ea043"/>
-    <path d="M930 162 L966 182 L938 190 Z" fill="#1f7a35"/>
-    <g>
-      <ellipse cx="750" cy="212" rx="33" ry="39" fill="#fde7ef"/>
-      <ellipse cx="840" cy="212" rx="33" ry="39" fill="#fde7ef"/>
-      <ellipse cx="752" cy="214" rx="27" ry="33" fill="url(#f-iris)"/>
-      <ellipse cx="838" cy="214" rx="27" ry="33" fill="url(#f-iris)"/>
-      <ellipse cx="762" cy="198" rx="10" ry="6.5" transform="rotate(-25 762 198)" fill="#ffffff"/>
-      <ellipse cx="848" cy="198" rx="10" ry="6.5" transform="rotate(-25 848 198)" fill="#ffffff"/>
-      <circle cx="742" cy="230" r="3" fill="#ffffff" opacity=".8"/>
-      <circle cx="828" cy="230" r="3" fill="#ffffff" opacity=".8"/>
-    </g>
-    <ellipse cx="795" cy="258" rx="7" ry="5" fill="#1b1532"/>
-    <path d="M770 280 Q798 296 826 276" fill="none" stroke="#1b1532" stroke-width="4" stroke-linecap="round"/>
-    <g stroke="#1b1532" stroke-width="4" stroke-linecap="round">
-      <path d="M652 238 L602 228"/><path d="M652 256 L606 266"/>
-      <path d="M938 238 L988 228"/><path d="M938 256 L984 266"/>
-    </g>
-  </g>
-  </g>
-  </g>
+  <rect width="64" height="64" rx="12" fill="#101411"/>
+  <path d="M26 14h12v12h12v12H38v12H26V38H14V26h12Z" fill="#0fbf3e"/>
 </svg>

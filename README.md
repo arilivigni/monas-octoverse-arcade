@@ -4,26 +4,43 @@
 
 This repository holds the attendee guide for the workshop. It has two parts:
 
-- **This README**: the full workshop instructions, agenda, judging rubric, and award rules, so you can read everything right here on GitHub.
+- **This README**: the full workshop instructions, team rules, agenda, submission steps, judging rubric, and award rules, so you can read everything right here on GitHub.
 - **An [Astro](https://astro.build) website** that presents the same guide as a responsive, accessible dark-theme page for attendees.
 
 The site is only an attendee guide. It is not the game. Participants build the game themselves during the workshop.
 
-> **Note:** This is an independent workshop resource. It is **not** an official GitHub Universe or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. The character artwork in this repository is an original, Octocat-inspired illustration made for this workshop. It does not use or modify any official GitHub logo.
+> **Note:** This is an independent workshop resource. It is **not** an official GitHub Universe or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Universe event details within the artwork are not the workshop's event details. Public-facing mascot use requires approval from GitHub's Brand & Marketing Design team under the [mascot guidelines](https://brand.github.com/graphic-elements/mascots).
 
 ---
 
 ## 🏆 The challenge
 
-Participants build a browser game starring **Mona** the Octocat as the hero and **Copilot** as the sidekick. There is one key requirement: **the game must ship as a Copilot App canvas extension** that can be installed and launched inside the Copilot App itself. At the end, we **judge every submission and crown a winner**.
+Teams build a browser game starring **Mona** the Octocat as the hero and **Copilot** as the sidekick. There is one key requirement: **the game must ship as a Copilot App canvas extension** that can be installed and launched inside the Copilot App itself. Every team starts from one prompt. What you build from it is up to you. After the workshop, judges review every submission and crown the winners.
 
-### Core game
+### Start here: the prompt
 
-- Mona collects **green commit squares** while dodging **red bugs**.
-- The game **tracks the score**.
-- The game **increases speed over time**.
-- A **game-over screen** appears, with a **restart** button.
-- Copilot appears as a sidekick and gives an **encouraging tip every 10 points**.
+Every team starts with this prompt in the Copilot App. It sets the baseline, not the limit.
+
+> "Build a Copilot App **canvas extension** called *Mona's Octoverse Arcade*. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step."
+
+**The baseline:** Mona collects green commit squares and dodges red bugs. The score is tracked, and the speed increases over time. A game-over screen has a restart button. Copilot cheers you on with a tip every 10 points.
+
+**Make it yours:** build what the prompt asks, then take the game somewhere only your team would:
+
+- **Rethink the world**: levels, settings, and a story that make Mona's arcade feel like yours.
+- **Invent power-ups**: shields, magnets, merge combos, or boss bugs. Surprise the judges.
+- **Give Copilot personality**: make the sidekick funny, helpful, or full of surprises.
+- **Find your style**: art direction, animation, and sound that make people want to keep playing.
+
+## 👥 Teams
+
+Up to 150 people may take part, so everyone builds in a team.
+
+- **4–6 people per team**: minimum 4, maximum 6. Aim for 5.
+- **Choose a team name** during kickoff. You'll use it on your submission.
+- **One shared repository**: keep your team's extension in one repository that judges can open.
+
+With 150 participants, teams of 5 make about 30 teams (25–38, depending on team size). If your group has fewer than 4 people, join another group. If it has more than 6, split into two teams.
 
 ## ✅ Core requirement: ship it as a canvas extension
 
@@ -37,23 +54,28 @@ Start from the **provided canvas starter template**. Build the game UI with HTML
 
 **Why this raises the bar (in a good way):** participants learn the real extension model (manifest, canvas registration, install, and launch), not just front-end code. This is the "GitHub twist" that makes the challenge platform-native.
 
-### Initial prompt to give participants
-
-> "Build a Copilot App **canvas extension** called *Mona's Octoverse Arcade*. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step."
-
 ## ⏱️ Suggested workshop structure (2 hours)
 
 | Time | Phase |
 | --- | --- |
-| **0:00–0:15** | Kickoff: demo the target canvas extension, share the idea + starter prompt + rubric |
-| **0:15–0:25** | Everyone installs & opens the **starter canvas template** (confirm it runs) |
-| **0:25–1:15** | Build the core game inside the canvas with the Copilot App |
-| **1:15–1:35** | Pick a "power-up" stretch goal (leaderboard, sound, animation, theming) |
-| **1:35–2:00** | **Judging:** live demos, rubric scoring, and awards decided by the judges 🏆 |
+| **0:00–0:15** | Kickoff & teams: see the target canvas extension, get the starter prompt and rubric, form teams of 4–6, and choose a team name |
+| **0:15–0:25** | Every team installs & opens the **starter canvas template** (confirm it runs) |
+| **0:25–1:15** | Start from the prompt, then build your team's version inside the canvas with the Copilot App |
+| **1:15–1:35** | Pick a "power-up" stretch goal (leaderboard, sound, animation, theming, or your own idea) |
+| **1:35–2:00** | **Record & submit:** record a demo video of up to 90 seconds and post your submission in the challenge Discussion 🏆 |
+
+## 📮 Submitting
+
+Before the workshop ends at 2:00, one teammate posts your team's submission as a single comment in the challenge Discussion. Your facilitator will share the link. Include:
+
+1. **Team name**: the name your team chose at kickoff.
+2. **Description**: a few sentences about your game, your creative spin, and your power-up.
+3. **Demo video**: up to 90 seconds. Install the extension, open it as a canvas, and play. Attach the video to your comment or add a link.
+4. **Repository link**: the repository that contains your extension folder. Make sure the judges can access it.
 
 ## 🥇 Judging and picking a winner
 
-**Format:** Each team installs its extension live and gives a **90-second demo**: play the game and show it running as a canvas. Judges score every submission against the 25-point rubric and choose all three award winners. There is no audience vote.
+**How judging works:** after the workshop, judges review every submission's demo video and repository against the 25-point rubric. They choose all three award winners and announce them in the challenge Discussion. There is no audience vote.
 
 ### Scoring rubric (25 pts total)
 
@@ -82,9 +104,11 @@ The **judges decide** all three categories. Each category winner takes home **sw
 - ✅ Ship the **rubric up front** so teams build toward what's judged.
 - ✅ Provide a **known-good canvas starter** so "install & run" is achievable for everyone.
 - ✅ **Reward working software**: the rubric weights "it runs" highest (8 of 25 points).
-- ✅ Shared theme, personal spin: everyone builds Mona's Arcade, but customizes it.
+- ✅ Shared theme, personal spin: every team starts from the same prompt and builds Mona's Arcade, then makes it its own.
 
-## 💡 Alternate theme options (same format & rubric)
+## 💡 Ideas for your next canvas extension
+
+Inspiration for after the workshop — not submissions for this competition. Every team builds Mona's Arcade for this challenge, with the shared gameplay requirements and 25-point rubric.
 
 | Idea | Concept | GitHub Twist |
 | --- | --- | --- |
@@ -93,18 +117,6 @@ The **judges decide** all three categories. Each category winner takes home **sw
 | **Octo-Quiz** | Timed trivia game | Git/GitHub trivia; Copilot gives hints, Mona celebrates wins |
 | **PR Review Simulator** | Card-swipe game (approve/request changes) | Learn code-review etiquette; Mona is the author, Copilot the reviewer |
 | **Mona's Sticker Maker** | Canvas drawing + Octocat generator | Compose your own Octocat; export as PNG |
-
-## 📋 Quick demo checklist
-
-- [ ] The extension lives in its own folder, with an `extension.mjs` that registers a canvas.
-- [ ] It installs cleanly into the Copilot App.
-- [ ] It opens with `open_canvas`, and the game renders in the side panel.
-- [ ] Mona collects commit squares and dodges bugs. The score is tracked and speed increases.
-- [ ] The game-over screen and restart button work.
-- [ ] Copilot gives an encouraging tip every 10 points.
-- [ ] The game is HTML/CSS/vanilla JS inside the canvas, with no external build step.
-- [ ] The power-up stretch feature is ready.
-- [ ] The 90-second demo is rehearsed.
 
 ---
 
@@ -157,11 +169,18 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ├── .github/workflows/
 │   └── deploy-pages.yml      # Build and deploy to GitHub Pages
 ├── astro.config.mjs          # Astro configuration (static output, SITE_URL/BASE_PATH support)
+├── docs/
+│   └── speaker-demo-runbook.md # Speaker-only demo runbook (not published on the site)
 ├── package.json              # Scripts and the single dependency: astro
 ├── public/
-│   ├── favicon.svg           # Favicon based on the original Mona artwork
+│   ├── favicon.svg           # Neutral arcade icon, not a mascot or GitHub logo
 │   └── images/
-│       └── hero-arcade.svg   # Original Mona arcade art in a bold Universe-inspired tile grid
+│       ├── arcade-hero.png   # Supplied Mona and green-block landscape
+│       ├── mona-clouds.png   # Supplied Mona and butterfly illustration
+│       ├── universe-2026.png # Supplied Universe event artwork, displayed intact
+│       ├── pattern-green-pink.png
+│       ├── pattern-gold-orange.png
+│       └── hero-arcade.svg   # Previous artwork, no longer displayed
 └── src/
     ├── layouts/
     │   └── Base.astro        # HTML shell, metadata, favicon, skip link
@@ -173,10 +192,11 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 
 ### Design and accessibility notes
 
-- Dark ink and charcoal surfaces, with GitHub green as the primary accent and purple for AI and Copilot touches. The page also uses subtle grid and contribution-graph motifs.
-- The original hero artwork uses bold violet, hot pink, orange, and green tiles with a Mona silhouette and portrait, word pattern, curly brace, terminal prompt, and pixel motifs. It is an original workshop illustration and does not use official logos.
+- Neutral ink and charcoal surfaces, GitHub green (`#0FBF3E`) as the primary accent, and restrained Copilot purple, following the [GitHub Brand Toolkit](https://brand.github.com/foundations/color). Bright secondary colors stay primarily in the supplied artwork.
+- The five supplied images are displayed without recoloring, cropping, overlaid text, or altered event lockups. The main landscape introduces the challenge; the two supporting illustrations and geometric patterns form an inspiration gallery.
+- Mascots illustrate the creative challenge, rather than serving as the site's logo or explaining instructions. Public-facing mascot use still requires GitHub Brand approval.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
 - Layouts are responsive down to 320px wide.
-- `prefers-reduced-motion` turns off animation, both on the page and inside the SVG artwork.
+- `prefers-reduced-motion` turns off page animation.
 - Text and accent colors meet WCAG AA contrast against their backgrounds.
