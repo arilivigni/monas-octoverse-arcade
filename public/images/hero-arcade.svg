@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 540" role="img" aria-labelledby="title desc">
+  <title id="title">Mona's Octoverse Arcade</title>
+  <desc id="desc">Original arcade artwork in a bold tile grid: a violet Mona silhouette, a pale tile patterned with “all”, “tgthr”, and “now”, an orange curly brace, Mona’s smiling portrait on lavender, a pink branching motif, a repeating green-and-purple pattern, a terminal prompt, and bright green pixel blocks.</desc>
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6a9c7"/>
+      <stop offset=".52" stop-color="#f5b19b"/>
+      <stop offset="1" stop-color="#ec6f9b"/>
+    </linearGradient>
+    <radialGradient id="eye">
+      <stop offset="0" stop-color="#5638db"/>
+      <stop offset="1" stop-color="#170d2a"/>
+    </radialGradient>
+    <pattern id="repeat" width="78" height="64" patternUnits="userSpaceOnUse">
+      <rect width="78" height="64" fill="#170d2a"/>
+      <path d="M-12 16 C-3 -2 16 -2 26 14 C34 27 48 27 56 13 C64 -1 78 0 88 16 M-12 56 C-3 38 16 38 26 54 C34 67 48 67 56 53 C64 39 78 40 88 56" fill="none" stroke="#159447" stroke-width="18" stroke-linecap="round"/>
+    </pattern>
+    <pattern id="pixels" x="764" y="390" width="38" height="38" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+      <rect width="38" height="38" fill="#58ed7c"/>
+      <rect x="19" y="19" width="19" height="19" fill="#b3a316"/>
+    </pattern>
+    <clipPath id="words-tile"><rect x="192" y="0" width="380" height="390"/></clipPath>
+    <clipPath id="branch-tile"><rect x="0" y="198" width="192" height="342"/></clipPath>
+    <mask id="branch-node" maskUnits="userSpaceOnUse" x="0" y="198" width="192" height="342">
+      <rect x="0" y="198" width="192" height="342" fill="#fff"/>
+      <circle cx="78" cy="204" r="23" fill="#000"/>
+    </mask>
+    <clipPath id="mona-tile"><rect x="572" y="0" width="458" height="390"/></clipPath>
+    <clipPath id="silhouette-tile"><rect width="192" height="198"/></clipPath>
+  </defs>
+
+  <rect width="1030" height="540" fill="#170d2a"/>
+
+  <g clip-path="url(#silhouette-tile)" fill="#5a3cff">
+    <path d="M27 57 67 21 Q101 1 139 14 L159 -8 Q174 20 182 54 Q198 117 159 146 Q137 163 104 160 Q72 156 42 134 Q7 108 12 83 Q14 69 27 57Z"/>
+    <path d="M79 143 Q106 142 129 157 Q153 174 159 207 L49 207 Q57 170 79 143Z"/>
+    <path d="M18 74 34 79 M18 87 34 89" fill="none" stroke="#b783f6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <rect x="192" width="380" height="390" fill="#d9d9d9"/>
+  <g clip-path="url(#words-tile)" fill="#241830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">
+    <text x="210" y="28">all</text><text x="446" y="28">all</text><text x="480" y="28">tgthr</text>
+    <text x="198" y="71">tgthr</text><text x="289" y="71">now</text><text x="495" y="71">now</text>
+    <text x="289" y="114">all</text><text x="359" y="114">tgthr</text>
+    <text x="368" y="157">now</text><text x="446" y="157">all</text>
+    <text x="198" y="201">tgthr</text><text x="435" y="201">tgthr</text>
+    <text x="211" y="245">now</text><text x="289" y="245">all</text><text x="495" y="245">all</text>
+    <text x="277" y="288">tgthr</text><text x="368" y="288">now</text>
+    <text x="368" y="331">all</text><text x="435" y="331">tgthr</text>
+    <text x="289" y="375">all</text><text x="495" y="375">all</text>
+  </g>
+
+  <rect x="572" width="458" height="390" fill="#b783f6"/>
+  <g clip-path="url(#mona-tile)">
+    <ellipse cx="847" cy="434" rx="182" ry="84" fill="#170d2a"/>
+    <path d="M684 201 Q662 153 680 84 Q693 42 751 68 L786 83 Q800 89 815 83 Q881 58 923 77 Q966 57 977 71 Q986 103 970 151 Q964 171 976 205 L980 255 Q972 326 919 352 Q884 373 828 369 Q760 368 713 336 Q680 312 675 268Z" fill="#170d2a"/>
+    <path d="M704 230 Q709 169 744 129 Q774 99 815 109 Q853 119 899 109 Q941 101 965 139 Q988 174 970 228 Q1002 267 969 303 Q948 332 901 333 L770 333 Q722 331 699 302 Q679 274 704 230Z" fill="url(#face)"/>
+    <ellipse cx="748" cy="258" rx="34" ry="18" fill="#ef628d" opacity=".36"/>
+    <ellipse cx="925" cy="258" rx="34" ry="18" fill="#ef628d" opacity=".36"/>
+    <ellipse cx="756" cy="195" rx="34" ry="42" fill="#f7e7f0"/>
+    <ellipse cx="902" cy="195" rx="34" ry="42" fill="#f7e7f0"/>
+    <ellipse cx="759" cy="197" rx="26" ry="35" fill="url(#eye)"/>
+    <ellipse cx="899" cy="197" rx="26" ry="35" fill="url(#eye)"/>
+    <ellipse cx="773" cy="177" rx="12" ry="8" transform="rotate(-25 773 177)" fill="#fff"/>
+    <ellipse cx="913" cy="177" rx="12" ry="8" transform="rotate(-25 913 177)" fill="#fff"/>
+    <ellipse cx="831" cy="228" rx="9" ry="6" fill="#170d2a"/>
+    <path d="M813 261 Q834 270 858 257" fill="none" stroke="#170d2a" stroke-width="5" stroke-linecap="round"/>
+    <g fill="none" stroke="#170d2a" stroke-width="9" stroke-linecap="round">
+      <path d="M686 244 644 239 M683 267 641 275 M971 244 1015 239 M974 267 1017 275"/>
+    </g>
+  </g>
+
+  <path d="M670 0 H609 Q558 0 558 51 V138 Q558 190 522 190 H506 V222 H522 Q558 222 558 273 V338 Q558 390 609 390 H670 V339 H619 V252 Q619 207 584 196 Q619 185 619 140 V51 H670Z" fill="#c44b00"/>
+
+  <rect y="198" width="192" height="342" fill="#f42e79"/>
+  <g clip-path="url(#branch-tile)">
+    <path d="M24 204 H115 Q146 204 151 229 Q154 253 137 268 L89 313 Q69 333 83 351 L161 430 Q180 460 163 486 Q148 500 127 485 L50 408 Q22 380 47 351 L107 286 Q121 270 110 259 Q103 252 90 252 H24Z" fill="none" stroke="#b3a316" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" mask="url(#branch-node)"/>
+  </g>
+
+  <rect x="192" y="390" width="380" height="150" fill="url(#repeat)"/>
+
+  <rect x="572" y="390" width="192" height="150" fill="#f42e79"/>
+  <g fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M615 423 665 470 615 517"/>
+    <path d="M677 509 H725"/>
+  </g>
+
+  <rect x="764" y="390" width="266" height="150" fill="url(#pixels)"/>
+  <path d="M840 390 H878 V428 H916 V466 H878 V504 H840 V466 H802 V428 H840Z" fill="#b84a00"/>
+</svg>
