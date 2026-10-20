@@ -153,6 +153,8 @@ SITE_URL=https://arilivigni.github.io BASE_PATH=/monas-octoverse-arcade npm run 
 
 `.github/workflows/deploy-pages.yml` builds the site and publishes it to GitHub Pages. It runs on every push to `main` and can also be started by hand from the **Actions** tab (**Run workflow**). The workflow gets the correct origin and sub-path from `actions/configure-pages`, so links and assets work at `https://<owner>.github.io/<repo>/` or on a custom domain.
 
+Keep this as the only Pages deployment workflow. A second workflow can overwrite the site with a build missing `SITE_URL` and `BASE_PATH`, causing styles, images, and the favicon to return 404 errors on repository URLs.
+
 One-time setup:
 
 1. Go to **Settings → Pages** in the repository.
