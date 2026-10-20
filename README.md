@@ -4,7 +4,7 @@
 
 This repository holds the attendee guide for the workshop. It has two parts:
 
-- **[Open the live attendee website](https://arilivigni.github.io/monas-octoverse-arcade/)**
+- **[Open the live attendee website](https://ghlearn.github.io/monas-octoverse-arcade/)**
 - **This README**: the full workshop instructions, team rules, agenda, submission steps, judging rubric, and award rules, so you can read everything right here on GitHub.
 - **An [Astro](https://astro.build) website** that presents the same guide as a responsive, accessible dark-theme page for attendees.
 
